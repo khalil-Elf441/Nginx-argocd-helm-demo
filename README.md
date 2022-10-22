@@ -1,7 +1,7 @@
 
-## Deploy multiple Nginx applications using Helm chart same template and multiple input files
+## Deploy multiple Nginx applications using Helm chart (same template and multiple input files)
 
-The folder contains the following code:
+### The folder contains the following code:
 ```bash
 .
 │   .gitignore
@@ -26,17 +26,19 @@ The folder contains the following code:
                 service.yaml
 ```
 
-Create ArgoCD application nginx-staging:
+### Create ArgoCD application nginx-staging:
 
 ```bash
 kubectl apply -f argocd-helm-nginx-staging.yaml
 ```
 
-Create ArgoCD application nginx-prod:
+### Create ArgoCD application nginx-prod:
 
 ```bash
 kubectl apply -f argocd-helm-nginx-prod.yaml
 ```
+
+### ArgoCD UI
 
 ![ArgoCD](argocd/argocd-screenshot.PNG)
 
